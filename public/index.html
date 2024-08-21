@@ -18,11 +18,11 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="bg-dark">
+    <header class="bg-primary">
         <div class="container">
             <div class="text-center text-white">
                 <h1 class="display-4 fw-bolder">Compra con estilo</h1>
-                <p class="lead fw-normal text-white-50 mb-0">Crea, consulta y actualiza productos desde un mismo lugar</p>
+                <p class="lead fw-normal text-white mb-0">Crea, consulta y actualiza productos desde un mismo lugar</p>
             </div>
         </div>
     </header>
@@ -32,15 +32,8 @@
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center" id="product-list">
                 <!-- Products will be dynamically added here -->
             </div>
-            <!-- Forms for actions -->
-            <div class="mt-5">
-                <!-- GET Products in Discount -->
-                <!-- Mostrar Productos en Descuento -->
-                <button class="btn btn-primary mb-3" id="fetch-discounted-products">Mostrar Productos en Descuento</button>
-                <div id="discounted-products" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <!-- Discounted products will be dynamically added here -->
-                </div>
-                <!-- Create New Product Form -->
+            <div class="containerForm">            
+            <!-- Create New Product Form -->
                 <h3>Agregar Nuevo Producto</h3>
                 <form id="create-product-form">
                     <div class="mb-3">
@@ -59,8 +52,13 @@
                         <input type="checkbox" class="form-check-input" id="product-discount">
                         <label class="form-check-label" for="product-discount">Descuento</label>
                     </div>
-                    <button type="submit" class="btn btn-primary">Agregar Producto</button>
+                    <div class="d-flex justify-content-end">
+                        <button type="submit" class="btn btn-primary">Agregar Producto</button>
+                    </div>
                 </form>
+            </div>
+
+            <div class="containerForm">
                 <!-- Update Product Form -->
                 <h3 class="mt-5">Actualizar Producto</h3>
                 <form id="update-product-form">
@@ -84,8 +82,20 @@
                         <input type="checkbox" class="form-check-input" id="update-product-discount">
                         <label class="form-check-label" for="update-product-discount">Descuento</label>
                     </div>
+                    <div class="d-flex justify-content-end">
                     <button type="submit" class="btn btn-primary">Actualizar Producto</button>
+                    </div>
                 </form>
+            </div>
+
+            <div class="container">
+                <!-- GET Products in Discount -->
+                <!-- Mostrar Productos en Descuento -->
+                <div class="d-flex justify-content-center">
+                <button class="btn btn-primary btn-md mb-3" id="fetch-discounted-products">Mostrar Productos en Descuento</button>
+                </div>
+                <div id="discounted-products" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <!-- Discounted products will be dynamically added here -->
             </div>
         </div>
     </section>

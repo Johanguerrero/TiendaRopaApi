@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Jacket",
+    "name": "Vestido Flores",
     "price": 50000,
     "originalPrice": 60000,
     "discount": true
@@ -36,8 +36,15 @@
   },
   {
     "id": 6,
-    "name": "Camiseta Básica",
-    "price": "25000",
+    "name": "Gorra",
+    "price": "20000",
+    "originalPrice": "30000",
+    "discount": false
+  },
+  {
+    "id": 7,
+    "name": "Gorra Mujer",
+    "price": "20000",
     "originalPrice": "30000",
     "discount": true
   }
