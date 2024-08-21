@@ -11,6 +11,8 @@
     <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- SweetAlert2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css" rel="stylesheet" />
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
 </head>
@@ -33,7 +35,11 @@
             <!-- Forms for actions -->
             <div class="mt-5">
                 <!-- GET Products in Discount -->
+                <!-- Mostrar Productos en Descuento -->
                 <button class="btn btn-primary mb-3" id="fetch-discounted-products">Mostrar Productos en Descuento</button>
+                <div id="discounted-products" class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <!-- Discounted products will be dynamically added here -->
+                </div>
                 <!-- Create New Product Form -->
                 <h3>Agregar Nuevo Producto</h3>
                 <form id="create-product-form">
@@ -78,7 +84,7 @@
                         <input type="checkbox" class="form-check-input" id="update-product-discount">
                         <label class="form-check-label" for="update-product-discount">Descuento</label>
                     </div>
-                    <button type="submit" class="btn btn-warning">Actualizar Producto</button>
+                    <button type="submit" class="btn btn-primary">Actualizar Producto</button>
                 </form>
             </div>
         </div>
@@ -91,5 +97,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/main.js"></script>
+    <!-- SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </body>
 </html>

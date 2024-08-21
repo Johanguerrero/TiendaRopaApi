@@ -8,8 +8,10 @@
   },
   {
     "id": 2,
-    "name": "Cap",
-    "price": 20000
+    "name": "Chaqueta Dama",
+    "price": "60000",
+    "originalPrice": "90000",
+    "discount": true
   },
   {
     "id": 3,
@@ -23,6 +25,20 @@
     "name": "Chaqueta Dama",
     "price": "50000",
     "originalPrice": "80000",
+    "discount": true
+  },
+  {
+    "id": 5,
+    "name": "Jean Negro",
+    "price": "60000",
+    "originalPrice": "80000",
+    "discount": true
+  },
+  {
+    "id": 6,
+    "name": "Camiseta Básica",
+    "price": "25000",
+    "originalPrice": "30000",
     "discount": true
   }
 ]

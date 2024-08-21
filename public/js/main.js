@@ -1,10 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Fetch and display products
-    const fetchProducts = (url) => {
+    const fetchProducts = (url, targetElementId) => {
         fetch(url)
             .then(response => response.json())
             .then(products => {
-                const productContainer = document.querySelector('#product-list');
+                const productContainer = document.querySelector(targetElementId);
                 productContainer.innerHTML = ''; // Clear previous content
 
                 products.forEach(product => {
@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Event listener for fetch discounted products
     document.querySelector('#fetch-discounted-products').addEventListener('click', () => {
-        fetchProducts('/api/products?discount=true');
+        fetchProducts('/api/products?discount=true', '#discounted-products');
     });
 
     // Event listener for creating a new product
@@ -52,11 +52,15 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(response => response.json())
         .then(product => {
+            Swal.fire('Éxito', 'Producto creado con éxito', 'success');
             console.log('Product created:', product);
             // Optionally, fetch the updated list of products
-            fetchProducts('/api/products');
+            fetchProducts('/api/products', '#product-list');
         })
-        .catch(error => console.error('Error creating product:', error));
+        .catch(error => {
+            Swal.fire('Error', 'Error al crear el producto', 'error');
+            console.error('Error creating product:', error);
+        });
     });
 
     // Event listener for updating a product
@@ -75,13 +79,17 @@ document.addEventListener('DOMContentLoaded', () => {
         })
         .then(response => response.json())
         .then(product => {
+            Swal.fire('Éxito', 'Producto actualizado con éxito', 'success');
             console.log('Product updated:', product);
             // Optionally, fetch the updated list of products
-            fetchProducts('/api/products');
+            fetchProducts('/api/products', '#product-list');
         })
-        .catch(error => console.error('Error updating product:', error));
+        .catch(error => {
+            Swal.fire('Error', 'Error al actualizar el producto', 'error');
+            console.error('Error updating product:', error);
+        });
     });
 
     // Initial load of products
-    fetchProducts('/api/products');
+    fetchProducts('/api/products', '#product-list');
 });
