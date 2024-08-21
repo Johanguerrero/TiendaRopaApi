@@ -1,0 +1,28 @@
+[
+  {
+    "id": 1,
+    "name": "Jacket",
+    "price": 50000,
+    "originalPrice": 60000,
+    "discount": true
+  },
+  {
+    "id": 2,
+    "name": "Cap",
+    "price": 20000
+  },
+  {
+    "id": 3,
+    "name": "Jeans",
+    "price": 70000,
+    "originalPrice": 80000,
+    "discount": true
+  },
+  {
+    "id": 4,
+    "name": "Chaqueta Dama",
+    "price": "50000",
+    "originalPrice": "80000",
+    "discount": true
+  }
+]
