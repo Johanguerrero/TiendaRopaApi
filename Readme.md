@@ -1,6 +1,3 @@
-Claro, aquí tienes el `README.md` actualizado con los datos de tu proyecto:
-
----
 
 # Proyecto Clothing Store
 
