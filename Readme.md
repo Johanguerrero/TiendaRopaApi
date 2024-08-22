@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 743e5f71a897cf45497e35d6296e6102e509a971
 # Proyecto Clothing Store
 
 Proyecto desarrollado por: 
