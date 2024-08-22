@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             .then(response => response.json())
             .then(products => {
                 const productContainer = document.querySelector(targetElementId);
-                productContainer.innerHTML = ''; // Clear previous content
+                productContainer.innerHTML = '';
 
                 products.forEach(product => {
                     const colDiv = document.createElement('div');

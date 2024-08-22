@@ -47,5 +47,12 @@
     "price": "20000",
     "originalPrice": "30000",
     "discount": true
+  },
+  {
+    "id": 8,
+    "name": "Pantaloneta Unisex",
+    "price": "10000",
+    "originalPrice": "18000",
+    "discount": true
   }
 ]
